@@ -55,7 +55,13 @@ public class CustomArrayList<T> implements CustomList<T> {
 	@Override
 	public int getSize() {
 		// TODO Auto-generated method stub
-		return customArray.length;
+		//return customArray.length;
+		int count = 0;
+		  for (Object obj : customArray) {
+		    if ( obj != null ) count++;
+		  }
+		  return count;
+		
 	}
 	
 	// method to get elements from Custom Array List
